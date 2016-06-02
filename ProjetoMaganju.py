@@ -1,3 +1,25 @@
+alunos = []
+continua = "s"
+while continua == "s":
+    matricula = input("Matricula:")
+    nome = input("digitar nome do aluno:")
+    rg = input("digitar o RG  do Aluno":)
+    cpf = input("Digitar CPF do aluno matriculado:")
+    dataNascimento = ("Digitar data de nnascimento do Aluno":)
+    Genero = ("Digitar a opção de Genero do aluno":)
+    cidade= ("Digitar nome da cidade":)
+    estado=("Digitar nome do estado")
+    Nacionalidade = ("Digitar nacionalidade":)
+    Curso = ("Digitar nome do Curso":)
+    telefone =("Digitar nomero do telefone de contato":)
+    email = ("Digitar endereço de email do aluno":)
+    alunos.append([matricula,nome,rg,cpf,dataNascimento,genero,cidade,estado,nacionalidade,curso,telefone,email])
+    continua = input("Continua?[s/n]")
+
+arquivo = open("alunos.txt","a")
+for aluno in alunos:
+    arquivo.write("%s;%s;%s\n" % (aluno[0],aluno[1],aluno[2],aluno[3],aluno[4],aluno[5],aluno[6],aluno[7],aluno[8],aluno[9],aluno[10],aluno[11],aluno[12],aluno[13],aluno[14],aluno[15]))
+arquivo.close()
 def listar_quarto():
     print("**********************************")
     print("*** RESIDÊNCIA MANGAJU UFPB RT ***")
@@ -104,7 +126,7 @@ def cadastrar_aluno():
           nome.append(input("RG:"))
           nome.append(input("CPF:"))
           nome.append(input("DATA DE NASCIMENTO:"))
-          nome.append(input("SEXO:"))
+          nome.append(input("GENERO:"))
           nome.append(input("CIDADE:"))
           nome.append(input("ESTADO:"))
           nome.append(input("NACIONALIDADE:"))
@@ -172,6 +194,7 @@ def exibir_menuprincipal():
              print("Opçãp Inválida!")
 
 
+aluno[]
 quarto = []
 equipamento = []
 nome = []
