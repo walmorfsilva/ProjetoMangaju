@@ -93,16 +93,6 @@ def listar_aluno():
     print("**********************************")
     for i in range(len(nome)):
         print(i+1,":"+nome[i])
-    
-    arquivo = open("nome.txt","r")
-    linhas = arquivo.read().splitlines()
-    arquivo.close()
-
-    for i in range(len(nome)):
-        print("Matricula: %s" % aluno[0])
-        print("CPF: %s" % aluno[1])
-        print("Nome: %s" % aluno[2])
-        print("Nome: %s" % aluno[2])
 
 def cadastrar_aluno():
     entrada = "s"
@@ -126,12 +116,6 @@ def cadastrar_aluno():
           email -input("EMAIL:")
           nome.append([nome,rg,cpf,data,cidade,estado,nacionalidade,matricula,curso,fone.email])
           continua = input("Continuar? [S/N]:")
-    
-    arquivo = open("nome.txt","a")
-    for i in nome:
-        arquivo.write("%s;%s;%s\n" % (aluno[0],aluno[1],aluno[2]))
-    arquivo.close()      
-          
 
 def cadastrar_residente():
     opcao = ""
