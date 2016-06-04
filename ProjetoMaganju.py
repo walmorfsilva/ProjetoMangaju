@@ -20,7 +20,7 @@ def quarto_cadastro():
           tipo = input("TIPO DE QUARTO:")
           nome = input("NOME DAS PESSOAS DO QUARTO:")
           quarto.append([numero,pessoa,tipo,nome])
-          entrada = input("Continuar? [S/N]:")
+          continuar = input("Continuar? [S/N]:")
 
 def listar_equipamento():
     print("**********************************")
@@ -45,7 +45,7 @@ def equipamento_cadastro():
           data = input("DATA DA ENTREGA DO EQUIPAMENTO:)
           proprietario = input("PROPRIETÁRIO DO EQUIPAMENTO:)
           equipamento.append([nome,tipo,funcao,data,proprietario])
-          entrada = input("Continuar? [S/N]:")
+          continuar = input("Continuar? [S/N]:")
 
 def cadastrar_equipamento():
     opcao = ""
@@ -113,9 +113,9 @@ def cadastrar_aluno():
           matricula = input("MATRICULA:")
           curso = input("CURSO:")
           fone = input("FONE:")
-          email -input("EMAIL:")
+          email = input("EMAIL:")
           nome.append([nome,rg,cpf,data,cidade,estado,nacionalidade,matricula,curso,fone.email])
-          continua = input("Continuar? [S/N]:")
+          continuar = input("Continuar? [S/N]:")
 
 def cadastrar_residente():
     opcao = ""
