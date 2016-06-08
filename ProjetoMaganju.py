@@ -42,8 +42,8 @@ def equipamento_cadastro():
           nome = input("NOME DO EQUIPAMENTO:")
           tipo = input("TIPO DE EQUIPAMENTO")
           funcao = input("FUNÇÂO DO EQUIPAMENTO:")
-          data = input("DATA DA ENTREGA DO EQUIPAMENTO:)
-          proprietario = input("PROPRIETÁRIO DO EQUIPAMENTO:)
+          data = input("DATA DA ENTREGA DO EQUIPAMENTO:")
+          proprietario = input("PROPRIETÁRIO DO EQUIPAMENTO:")
           equipamento.append([nome,tipo,funcao,data,proprietario])
           continuar = input("Continuar? [S/N]:")
 
