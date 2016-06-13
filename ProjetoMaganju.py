@@ -173,6 +173,12 @@ def cadastrar_aluno():
           nome.append([nome,rg,cpf,data,cidade,estado,nacionalidade,matricula,curso,fone,email])
           continuar = input("Continuar? [S/N]:")
 
+def lista_remover(mat,residentes):
+    for res in residentes:
+        if mat == res[0]:
+            residentes.pop(res)
+            break       
+
 def cadastrar_residente():
     cabecalho = "*** RESIDÊNCIA MANGAJU UFPB RT ***"
     tam_linha = 45
