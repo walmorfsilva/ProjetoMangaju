@@ -188,7 +188,7 @@ def cadastrar_residente():
     margem = " " * int(tam_margem)
     titulo = margem + cabecalho + margem    
     opcao = ""
-    while opcao != "3":
+    while opcao != "4":
          print(linha)
          print(titulo)
          print("     **********************************")
@@ -196,7 +196,9 @@ def cadastrar_residente():
          print("     **********************************")
          print("     [2] LISTAR ALUNOS              ***")
          print("     **********************************")
-         print("     [3] SAIR                       ***")
+         print("     [3] REMOVER ALUNO              ***")
+         print("     **********************************")
+         print("     [4] SAIR                       ***")
          print("     **********************************")
          print(linha)
          opcao = input("INFORME À OPÇÂO:")
@@ -208,7 +210,10 @@ def cadastrar_residente():
              listar_aluno()
 
          elif opcao == "3":
-             print("Obrigado até a próxima!")
+             lista_remover()
+        
+        elif opçao == "4":
+            print("obrigado ate a proxima!")
 
          else:
              print("Opçãp Inválida!")
